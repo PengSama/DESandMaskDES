@@ -7,7 +7,7 @@
 		return turnToBase16(IP_1boxTrans(encrpty(IPboxTrans(turnTo64bits(message)),generateKeys(turnTo64bits(key)),unencrpty)))
 	}
 	//定义置换表
-const	IP=[58,50,42,34,26,18,10,2,
+const		IP=[58,50,42,34,26,18,10,2,
 			60,52,44,36,28,20,12,4,
 			62,54,46,38,30,22,14,6,
 			64,56,48,40,32,24,16,8,
@@ -102,7 +102,7 @@ const	IP=[58,50,42,34,26,18,10,2,
 			'0100':'4','0101':'5','0110':'6','0111':'7',
 			'1000':'8','1001':'9','1010':'a','1011':'b',
 			'1100':'c','1101':'d','1110':'e','1111':'f'
-		}
+				}
 	function turnToBase16(str){
 		let output=''
 		for(let i=0;i<64;i=i+4){
