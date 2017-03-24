@@ -205,7 +205,7 @@ const		IP=[58,50,42,34,26,18,10,2,
 	function lastEncrypt(str,key){
 		let left=str.slice(0,32)
 		let right=str.slice(32)
-		return XOR32(right,X3)+XOR32(XOR32(PboxTrans(maskSboxSearch(XOR48(Eright=EboxTrans(right),key))),left),X3)
+		return XOR32(right,X3)+XOR32(XOR32(PboxTrans(maskSboxSearch(XOR48(EboxTrans(right),key))),left),X3)
 	}
 	//中间轮加密时处理函数
 	function oneEncrypt(str,key){
